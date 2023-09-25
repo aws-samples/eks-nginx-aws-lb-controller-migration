@@ -79,10 +79,10 @@ ingress.networking.k8s.io/nginx-ingress created
 
 ### STEP 3: Application game-2048 can now be accessed from 2 paths 1/ via Classic Loadbalancer url + NGINX  2/ via Application Load Balancer url ( see the Solution Overview diagram above)
 
-run the following command to get the CLB and ALB urls. Access them from the browser http://<url>
+run the following command to get the CLB and ALB urls. Access them from the browser http://<ADDRESS>
 
 ```
- k get ingress -A
+ kubectl get ingress -A
 ```
 
 #### Output should look like below
@@ -102,6 +102,8 @@ game-2048   nginx-ingress   nginx   *       ae56424309b314a9ca3c89196258db1a-161
 To teardown and remove the resources created in this example:
 
 ```sh
+cd ../1-Infrastructure 
+
 terraform destroy -auto-approve
 ```
 
