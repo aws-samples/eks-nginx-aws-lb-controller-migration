@@ -1,6 +1,6 @@
 #  Migrating from NGINX Ingress Controller to AWS Load Balancer Controller
 
-This project demonstrates how to migrate from NGINX Ingress Controller to AWS Load Balancer Controller. One of the key motivations for migration is that NGINX ingress controller provisions Classic Load Balancer(CLB) on AWS. As CLB does not support integration with AWS Web Applcation Firewall (AWS WAF), customers could migrate to Application Load Balancer (ALB) as an alternative. ALB supports integration with AWS WAF. 
+This project demonstrates how to migrate from NGINX Ingress Controller to AWS Load Balancer Controller. One of the key motivations for migration is that NGINX ingress controller provisions Classic Load Balancer(CLB) on AWS. As CLB does not support integration with AWS Web Application Firewall (AWS WAF), customers could migrate to Application Load Balancer (ALB) as an alternative. ALB supports integration with AWS WAF. 
 
 
 The project is structured as follows
